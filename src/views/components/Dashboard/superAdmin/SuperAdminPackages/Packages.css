@@ -1,0 +1,17 @@
+.pkg-con button{
+    height: 38px !important;
+}
+
+.ra-border{
+    border: 1px solid #EAECF0;
+    padding: 8px;
+}
+
+.ra-border input {
+    margin-left: 2px !important;
+    margin-right: 5px;
+}
+
+.payment-box h2{
+    border-bottom: 1px solid #EAECF0;
+}

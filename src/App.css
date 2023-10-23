@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primaryColor: #E50915;
+  --primaryColorHover: #E6341F;
+  --lightColor: #eeedf8;
+  --tertiaryColor: #b6cbf5;
+  --fontFamily: 'Nunito Sans', sans-serif;
+  --fontFamilyMonrope: 'Manrope', sans-serif;
+  --labelColor: #344054;
+  --inputFieldBorderColor: #EAECF0;
+  --inputFieldPlaceHolderTextColor: #98a2b3;
+  --passwordAlertMessage: #667085;
+  --logInGoogleFacebookText: #667085;
+  --black1: #101828;
+  --black2: #1D2939;
+  --black4: #475467;
+  --black5: #667085;
+  --black6: #98a2b3;
+  --black8: #eaecf0;
+  --red: #ec4035;
+  --green: #1fb55b;
+  --transition: all 0.1s ease-in-out;
+}
+
+hr {
+  background-color: #EAECF0 !important;
+  opacity: 1 !important;
+}
+
+.bg-lm, body{
+  background: #F2F4F7 !important;
+}
+
+nav.lm-pagination {
+  position: relative;
+  right: 10px;
+}
+
+.borderl{
+  border: 1px solid #EAECF0;
+}
+
+.buttonl {
+    color: #667085;
+    background: #FFFFFF;
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px 15px;
+}
+
+.lm-pagination ul li{
+  margin-left: 10px;
+}
+
+.lm-pagination button.page-link {
+  color: var(--black2);
+  padding: 5px 13px;
+  font-weight: bold;
+  border: 1px solid #EAECF0;
+  border-radius: 4px;
+}
+
+.lm-pagination button svg{
+  position: relative;
+  top: -2px;
+}
+
+.lm-pagination button.page-link:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.lm-pagination button.page-link:hover {
+  color: #fff;
+  background-color: #185AF5;
+}
+
+.lm-pagination button.page-link.lmp-active {
+  color: #fff;
+  background-color: #185AF5;
+}
+
+/* loading css */
+.loader {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 10px solid orange;
+  border-top-color: #002147;
+  box-sizing: border-box;
+  background: transparent;
+  animation: loading 1s linear infinite;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 0;
+  text-align: center;
+}
+
+button.btn.btn-info {
+  color: #fff;
+}
+
+a.btnedit{
+  padding: 8px 10px !important;
+  color: #fff !important;
+}
+
+.btn-apply, .btn-filter{
+  height: 37px;
+}
+
+p.scat {
+  background: #e50915;
+  color: #fff;
+  padding: 6px 5px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+}
+
+.lm-posts3{
+  background-color: #efeeee !important;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,47 @@
+.lm-alert-success p {
+    font-family: var(--fontFamily);
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    color: #36AE7C !important;
+    background: rgba(54, 174, 124, 0.3) !important;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.lm-alert-reject p {
+    font-family: var(--fontFamily);
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    color: #F32424 !important;
+    background: rgba(243, 36, 36, 0.3) !important;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.lm-alert-pending p {
+    font-family: var(--fontFamily);
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    color: #FF8D29 !important;
+    background: rgba(255, 141, 41, 0.3) !important;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.books-tbl h5{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black3);
+}

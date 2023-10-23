@@ -1,0 +1,95 @@
+.not-dashboard-home-right-col {
+  padding: 10px;
+}
+
+.not-dashboard-home-left-col {
+  padding: 10px;
+}
+
+.member-total-count-card {
+  background: #FFFFFF;
+  border: 1px solid #EAECF0;
+  border-radius: 12px;
+}
+
+.scheduled-bookings-car-status {
+  background: #deecdf;
+  color: #3b9641;
+}
+
+.scheduled-bookings-money-limit > p {
+  text-decoration: underline;
+  color: var(--primaryColor);
+}
+
+.trip-details-item > small {
+  color: var(--black6);
+}
+
+.trip-details-item > p {
+  color: var(--black1);
+}
+
+.notification-card-detail > p {
+  font-weight: 600;
+  color: var(--black1);
+}
+
+.notification-card-detail > small {
+  font-weight: 500;
+  color: var(--black6);
+}
+
+.member-top-total-icon1 svg {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: #185AF5;
+  background-color: rgba(24, 90, 245, 0.1);
+  padding: 10px;
+}
+
+.member-top-total-icon2 svg {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: #E6341F;
+  background-color: rgba(230, 52, 31, 0.1);
+  padding: 10px;
+}
+
+.member-top-total-icon3 svg {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: #A760FF;
+  background-color: rgba(167, 96, 255, 0.1);
+  padding: 10px;
+}
+
+
+
+/* for smaller laptop desktop screens */
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .not-dashboard-home-right-col {
+    padding: 20px;
+  }
+
+  .not-dashboard-home-left-col {
+    padding: 20px 30px;
+  }
+}
+
+/* for larger laptop desktop screens */
+@media screen and (min-width: 1400px) {
+  .not-dashboard-home-right-col {
+    padding: 30px;
+  }
+
+  .not-dashboard-home-left-col {
+    padding: 20px 60px;
+  }
+}
+
+
+

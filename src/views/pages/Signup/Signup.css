@@ -1,0 +1,29 @@
+.text-input-field2 {
+    height: 50px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid var(--inputFieldBorderColor);
+    padding: 0px 10px 0px 15px;
+}
+
+.react-tel-input .form-control {
+    border: unset !important;
+    border-radius: unset !important;
+    height: 48px !important;
+    width: 100% !important;
+}
+
+.react-tel-input:focus {
+    color: unset !important;
+    background-color: unset !important;
+    border-color: unset !important;
+    outline: 0 !important;
+    box-shadow: unset !important;
+}
+
+.react-tel-input .flag-dropdown {
+    border-left: unset !important;
+    border-top: unset !important;
+    border-bottom: unset !important;
+    border-right: 1px solid #EAECF0 !important;
+}

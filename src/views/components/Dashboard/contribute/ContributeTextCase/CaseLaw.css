@@ -1,0 +1,12 @@
+.btn-savve {
+    color: #fff;
+    font-family: var(--fontFamily);
+    background: var(--primaryColor) !important;
+    border: 1px solid var(--primaryColor) !important;
+    padding: 5px 20px !important;
+    width: 100%;
+}
+
+.btn-savve:hover {
+    background: var(--primaryColorHover) !important;
+}

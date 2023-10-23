@@ -1,0 +1,85 @@
+.msg-card {
+    padding: 0px 15px;
+    border-bottom: 1px solid #EAECF0;
+    background-color: #fff;
+  }
+
+.msg-card:last-child{
+    border-bottom: unset;
+}
+
+.msg-header{
+  background: var(--primaryColor);
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 12px 12px 0px 0px;
+  width: 100%;
+}
+
+.msg-header h4{
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.btn-notification{
+  font-family: var(--fontFamily);
+  background: var(--primaryColor) !important;
+  border: 1px solid var(--primaryColor) !important;
+  padding: 5px 20px !important;
+  width: 100%;
+}
+
+.btn-notification:focus{
+  box-shadow: unset !important;
+  outline: 0 !important;
+}
+
+
+.btn-notification:hover{
+  background: var(--primaryColorHover) !important;
+}
+
+.msg-title {
+  color: var(--primaryColor);
+  font-family: var(--fontFamily);
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.msg-title:hover {
+  color: var(--primaryColorHover);
+}
+
+.msg-point{
+  color: var(--black4);
+  font-family: var(--fontFamily);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.lm-modal .modal-dialog {
+    margin-top: 15%;
+}
+
+@media screen and (max-width: 768px){
+
+  .msg-header {
+    padding: 0.4rem;
+  }
+
+  .btn-notification {
+    padding: 5px 20px !important;
+    font-size: 14px !important;
+  }
+
+  .msg-title {
+    font-size: 16px;
+  }
+
+  .msg-point{
+    font-size: 14px;
+  }
+
+}

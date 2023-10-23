@@ -1,0 +1,412 @@
+.device-tab, .upgrade-tab1, .pay-tab {
+    border: 1px solid #EAECF0;
+    background: #fff;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.upgrade-tab2 {
+    color: #fff;
+    background: #185AF5;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.device-tab thead tr td:first-child {
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+    width: 100%;
+}
+
+.pay-tab tbody tr td{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black4);
+}
+
+.pay-tab tbody tr {
+    border-bottom: 1px solid #EAECF0;
+}
+
+.pay-tab tbody tr:last-child{
+    border-bottom: unset;
+}
+
+.device-tab thead tr td:nth-child(2){
+    font-family: var(--fontFamily);
+    float: right;
+}
+
+.device-tab thead tr td:nth-child(2) span, .agent-tab{
+    font-family: var(--fontFamily);
+    color: #36AE7C;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    background: rgba(54, 174, 124, 0.1);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.device-tab tbody tr td:first-child{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black4);
+    width: 100%;
+}
+
+
+.device-tab tbody tr td:nth-child(2){
+    font-family: var(--fontFamily);
+    float: right;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black1);
+    text-align: right;
+}
+
+.upgrade-tab1 thead tr td:first-child {
+    font-family: var(--fontFamily);
+    color: var(--black1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 40px;
+    padding-top: 0 !important;
+}
+
+.upgrade-tab1 thead tr td:nth-child(2){
+    font-family: var(--fontFamily);
+    float: right;
+}
+
+.upgrade-tab1 tbody tr td:first-child{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black2);
+}
+
+.upgrade-tab2 thead tr td:first-child {
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 40px;
+    padding-top: 0 !important;
+    color: #fff;
+}
+
+.upgrade-tab1 tbody tr td:first-child svg.upgrade-tick {
+    color: #36AE7C;
+    font-size: 16px;
+    margin-right: 2px;
+    position: relative;
+    top: 0px;
+    left: -3px;
+}
+
+.upgrade-tab1 tbody tr td:first-child svg.upgrade-cross {
+    color: #98A2B3;
+    font-size: 8px;
+    margin-right: 10px;
+}
+
+.upgrade-tab2 thead tr td:nth-child(2){
+    font-family: var(--fontFamily);
+    float: right;
+    color: #fff;
+}
+
+
+.upgrade-tab2 tbody tr td:first-child{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+
+.btn-remove-device,.btn-remove-member {
+    font-family: var(--fontFamily);
+    padding: 5px 16px;
+    border-radius: 4px;
+    border: 1px solid #EAECF0;
+    background-color: var(--primaryColorHover);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    width: 100%;
+}
+
+.btn-get-started2{
+    font-family: var(--fontFamily);
+    padding: 5px 16px;
+    border-radius: 4px;
+    border: 1px solid var(--primaryColorHover);
+    background-color: var(--primaryColorHover);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    width: 100%;
+}
+
+.btn-add-member{
+    font-family: var(--fontFamily);
+    padding: 5px 16px;
+    border-radius: 4px;
+    border: 1px solid #185AF5;
+    background-color: #185AF5;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+}
+
+.btn-add-member:hover{
+    color: #fff;
+    border: 1px solid #2260f0;
+    background-color: #2260f0;
+}
+
+.btn-invite-member{
+    font-family: var(--fontFamily);
+    padding: 5px 16px;
+    border-radius: 4px;
+    border: 1px solid #185AF5;
+    background-color: #185AF5;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    width: 100%;
+}
+
+.btn-invite-member:hover{
+    border: 1px solid #2260f0;
+    background-color: #2260f0;
+}
+
+.btn-edit-member{
+    font-family: var(--fontFamily);
+    padding: 5px 16px;
+    border-radius: 4px;
+    border: 1px solid #EAECF0;
+    background-color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #475467;
+    width: 100%;
+}
+
+.btn-edit-member:hover,.btn-get-started:hover{
+    background-color: var(--primaryColorHover) !important;
+    color:#fff !important;
+}
+
+.btn-remove-device:hover, .btn-remove-member:hover, .btn-get-started2:hover{
+    background-color: var(--primaryColor);
+}
+
+.btn-remove-device svg {
+    position: relative;
+    top: -2px;
+    left: -5px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.device-tab tbody tr {
+    border-bottom: 1px solid #EAECF0;
+}
+
+.device-tab tbody tr:nth-child(4),.device-tab tbody tr:last-child{
+    border-bottom: unset;
+}
+
+.member-lists img {
+    width: 60px;
+    height: 60px;
+}
+
+.member-lists h3{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1D2F47;
+}
+
+.member-lists p{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6C7584;
+}
+
+.member-tbl {
+    background: #fff;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.agents-tbl img{
+    width: 60px;
+    height: 60px;
+}
+
+.agents-tbl h3{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black1);
+}
+
+.agents-tbl p{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--black4);
+}
+
+.member-tbl h2, .member-payments h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1D2F47;
+    font-family: var(--fontFamily);
+}
+
+.agents-tbl h3{
+    display: inline-block;
+}
+
+.agents-tbl span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.ag-features{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--black4);
+    margin-left: 4%;
+}
+
+.upgrade-pkg {
+    background: #EAECF0 !important;
+    border-radius: 0px 0px 10px 10px;
+    position: relative;
+    top: -8px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.upgrade-pkg span{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.upgrade-pkg2 {
+    background: var(--primaryColor) !important;
+    border-radius: 0px 0px 10px 10px;
+    position: relative;
+    top: -8px;
+    padding: 10px;
+}
+
+.btn-get-started{
+    font-family: var(--fontFamily);
+    padding: 5px 16px;
+    border-radius: 4px;
+    border: 1px solid #EAECF0;
+    background-color: var(--primaryColor) !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    width: 100%;
+    text-decoration: none;
+}
+
+.success-tab{
+    font-family: var(--fontFamily);
+    color: #36AE7C;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    background: rgba(54, 174, 124, 0.1);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .member-lists img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .agents-tbl img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .member-lists h3 {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 0;
+    }
+
+    .member-lists p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .btn-edit-member,.btn-add-member, .btn-remove-device, .btn-remove-member{
+        padding: 5px 16px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+}

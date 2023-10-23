@@ -1,0 +1,76 @@
+.btn-next{
+	text-decoration: none;
+	color: #fff;
+	font-family: var(--fontFamily);
+	background: var(--primaryColor) !important;
+	border: 1px solid var(--primaryColor) !important;
+	padding: 5px 20px !important;
+	border-radius: 8px;
+	float: left;	
+}
+
+.btn-next:focus{
+  	box-shadow: unset !important;
+	outline: 0 !important;
+}
+
+
+.btn-next:hover{
+	text-decoration: none;
+	color: #fff;
+  	background: var(--primaryColorHover) !important;
+}
+
+.country-border button{
+	border: 1px solid #EAECF0;
+}
+
+.lm-file-upload {
+    text-align: center;
+    color: #185AF5;
+    overflow: hidden;
+    height: 134px !important;
+    width: 100%;
+    background: rgba(24, 90, 245, 0.08);
+    border: 1px dashed #185AF5;
+    font-size: 34px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+  
+.lm-file-upload label {
+	margin-top: 3%;
+	cursor: pointer;
+  }
+  
+.lm-file-upload svg {
+	cursor: pointer;
+  }
+  
+.lm-file-upload input {
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+  }
+  
+.file-up-txt {
+	font-family: var(--fontFamily);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+	cursor: pointer;
+  }
+.file-up-txt span{
+	color: #185AF5;
+	font-weight: 600;
+}
+
+

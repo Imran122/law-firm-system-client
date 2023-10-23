@@ -1,0 +1,21 @@
+.arti-tbl a h3{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #185AF5;
+}
+
+.arti-tbl a:hover h3{
+    color: var(--primaryColor);
+}
+
+.arti-tbl p{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--black3);
+}

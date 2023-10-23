@@ -1,0 +1,38 @@
+.sa-dash-table tbody tr td:first-child {
+    font-weight: 600;
+}
+
+span.tbl-title-span {
+    font-weight: 400 !important;
+    font-size: 12px;
+    color: var(--black4);
+    position: relative;
+    left: 45px;
+    top: -15px;
+}
+
+.lm-table thead tr th,.lm-table tbody tr td{
+    font-family: var(--fontFamily);
+    padding: 15px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.lm-table tbody tr td{
+    font-weight: normal;
+}
+
+.lm-table {
+    background: #fff;
+}
+
+
+.tbl-title-img {
+    margin-right: 5px;
+}
+
+.lm-thead tr th{
+    color: var(--black1);
+    background-color: #eaecf4;
+    border-color: #e3e6f0;
+}

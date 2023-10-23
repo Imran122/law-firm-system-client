@@ -1,0 +1,95 @@
+.elm-table{
+    background: #FFFFFF;
+    border: 1px solid #EAECF0;
+    border-radius: 12px;
+}
+
+.elm-table tr {
+    text-align: center;
+}
+
+.elm-table thead tr {
+    background: #EAECF0;
+}
+
+.elm-table thead tr th {
+    padding: 10px 0;
+    font-family: var(--fontFamily);
+    font-size: 16px;
+}
+
+.elm-table tbody tr td{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: var(--black1);
+    position: relative;
+    top: 0;
+}
+
+.tbl-top-header {
+    width: 100%;
+    overflow: hidden;
+}
+
+.tbl-top-header h3 {
+    font-size: 24px;
+    display: inline-block;
+    font-family: var(--fontFamily);
+}
+
+.tbl-top-header a {
+    position: relative;
+    font-family: var(--fontFamily);
+    right: 0;
+    float: right;
+}
+
+
+.elm-table tbody tr{
+    border-bottom: 1px solid #EAECF0;
+}
+
+.elm-table tbody tr:last-child{
+    border-bottom: unset;
+}
+
+.elm-table tr td:nth-child(2) h4{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--black1);
+    position: relative;
+    top: 0;
+}
+
+.elm-table tr td:first-child svg{
+    width: 25px;
+    height: 25px;
+}
+
+@media screen and (max-width: 768px){
+
+    .tbl-top-header h3 {
+        font-size: 20px;
+    }
+
+    .elm-table thead tr {
+        background: #EAECF0;
+        font-size: 14px;
+    }
+
+    .elm-table tbody tr td {
+        font-size: 14px;
+    }
+
+    .elm-table tr td:nth-child(2) h4 {
+        width: 100px;
+        font-size: 14px;
+    }
+
+}

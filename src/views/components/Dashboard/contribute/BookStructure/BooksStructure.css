@@ -1,0 +1,39 @@
+ul.lmbooksContent li {
+    list-style: none;
+}
+
+ul.lmbooksContent{
+    padding-left: 0;
+}
+
+.lm-sub-content-body.accordion-body {
+    padding: 0 15px;
+}
+
+.con-acc-lists{
+    border-bottom: 1px solid #EAECF0;
+}
+
+.con-acc-lists:last-child{
+    border-bottom: unset;
+}
+
+.contribute-sidebar .accordion {
+    border-bottom: 1px solid #EAECF0;
+}
+
+.contribute-sidebar .accordion:last-child {
+    border-bottom: unset;
+}
+
+button.cEdit{
+    border: unset;
+    margin-left: 5%;
+}
+
+.cEdit svg{
+    background: transparent;
+    border: unset;
+    color: #185AF5;
+    font-size: 20px;
+}

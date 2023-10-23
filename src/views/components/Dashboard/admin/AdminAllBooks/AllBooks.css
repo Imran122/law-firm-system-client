@@ -1,0 +1,74 @@
+.allbooks-div{
+    background-color: #fff;
+    border: 1.2px solid #EAECF0;
+    border-radius: 12px;
+    padding: 10px;
+}
+.books-tab{
+    position: relative;
+}
+.books-tab a{
+    color: #1E84FE;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    margin-right: 5%;
+    font-family: var(--fontFamily);
+}
+
+.books-tab a.active {
+    color: #1E84FE;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    margin-right: 5%;
+    font-family: var(--fontFamily);
+}
+
+.books-tab::before {
+    content: "";
+    background: #EAECF0;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 35px;
+  }
+
+.books-tab a.active::before {
+    content: "";
+    background: var(--primaryColor);
+    width: 10%;
+    height: 3px;
+    position: absolute;
+    top: 32px;
+  }
+
+.books-name-title2 h2{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #185AF5;
+}
+
+.books-name-title2 h3{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #185AF5;
+}
+
+.books-name-title a, .books-name-title2 a{
+    text-decoration: none !important;
+}
+
+.books-name-title a:hover, .books-name-title2 a:hover{
+    text-decoration: underline !important;
+}

@@ -1,0 +1,127 @@
+
+.banner-content-container {
+  width: 100%;
+  margin: 0 auto;
+}
+  
+.banner-content-left-col h1 {
+  font-family: var(--fontFamily);
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 48px;
+  color: #9D5B38;
+}
+
+.banner-content-left-col h4 {
+  font-family: var(--fontFamily);
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 48px;
+  margin-bottom: 10px;
+  color: #9D5B38;
+  margin-top: 8%;
+}
+
+.banner-content-left-col h4:after {
+  content: '';
+  display: block;
+  background: #9d5b38;
+  width: 30px;
+  height: 2px;
+}
+
+.banner-content-left-col p {
+  font-family: var(--fontFamily);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #9D5B38;
+  font-style: italic;
+  width: 60%;
+}
+
+.banner-content-left-col a {
+  background: #9d5b38;
+  padding: 10px 25px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.banner-content-left-col a:hover{
+  color: #fff;
+  background: #9d6345;
+}
+
+.legal-banner {
+  background: #DDC1B6;
+}
+    
+  .legal-bg {
+    background: url('../../../../../assets/images/legal_banner.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: block;
+  }
+
+  .banner-content-left-col {
+    padding: 20px;
+    margin-top: 3%;
+}
+
+  .btn-lm{
+    background-color: var(--primaryColor);
+    font-family: var(--fontFamily);
+    border: 1px solid var(--primaryColor);
+    color: #fff;
+    padding: 11px 20px;
+    width: 100%;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .btn-lm:hover{
+    background-color: var(--primaryColorHover);
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .banner-content-right-col {
+      width: 100%;
+      height: 165px;
+    }
+
+    .wrapper {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .banner-content-left-col {
+      position: relative;
+      top: 0;
+    }
+
+    .legal-bg {
+      height: 370px;
+    }
+
+    .banner-content-left-col h4 {
+      margin-top: 0;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+
+  }
+  @media screen and (min-width: 1400px) {
+
+  }

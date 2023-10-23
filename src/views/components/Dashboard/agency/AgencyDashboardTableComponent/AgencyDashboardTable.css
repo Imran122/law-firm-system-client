@@ -1,0 +1,46 @@
+.alm-table{
+    background: #FFFFFF;
+    border: 1px solid #EAECF0;
+    border-radius: 12px;
+}
+
+.alm-table tr {
+    text-align: center;
+}
+
+.alm-table thead tr {
+    background: #EAECF0;
+}
+
+.alm-table thead tr th {
+    padding: 20px 0;
+}
+
+.alm-table tbody tr td{
+    font-family: var(--fontFamily);
+    padding: 15px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.alm-table tbody tr{
+    border-bottom: 1px solid #EAECF0;
+}
+
+.alm-table tbody tr:last-child{
+    border-bottom: unset;
+}
+
+.alm-table tr td:first-child h4{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--black1);
+}
+
+.alm-table tr td:first-child svg{
+    width: 25px;
+    height: 25px;
+}

@@ -1,0 +1,32 @@
+.sub-area-slider-box {
+    background: #fff;
+    border: 1.2px solid #EAECF0;
+    border-radius: 12px;
+    padding: 25px;
+    min-height: 110px;
+    margin-bottom: 20px;
+}
+
+.sub-area-slider-box:hover {
+    background: #EAECF0;
+    cursor: pointer;
+}
+
+.sub-area-slider-txt {
+    float: left;
+}
+
+.sub-area-slider-txt h2 {
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #101828;
+}
+
+.sub-area-slider-icon {
+    float: right;
+    position: relative;
+    top: 20px;
+}

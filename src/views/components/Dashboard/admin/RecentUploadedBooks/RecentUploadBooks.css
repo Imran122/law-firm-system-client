@@ -1,0 +1,66 @@
+.recent-upload-card {
+    padding: 12px 10px;
+    border-bottom: 1px solid #EAECF0;
+  }
+
+.recent-upload-card:last-child{
+    border-bottom: unset;
+}
+  
+  .recent-upload-card-thumb img{
+    width: 58px;
+    height: auto;
+    margin-right: 0;
+  }
+    
+  .ru-book-title {
+    color: var(--black1);
+    font-size: 18px;
+    margin-left: 10%;
+    width: 100%;
+  }
+  
+  .ru-author-name {
+    color: var(--black4);
+    margin-left: 10%;
+    width: 100%;
+  }
+  
+  /* for smaller laptop desktop screens */
+  @media screen and (min-width: 768px) and (max-width: 1400px) {
+    .recent-upload-card {
+      padding: 0px 5px;
+    }
+    .recent-upload-card-thumb {
+      width: 55px;
+      height: auto;
+      margin-right: 0;
+    }
+    .tp-timeline p {
+        position: relative;
+        top: 0;
+        left: 35px;
+    }
+  }
+  
+  /* for larger laptop desktop screens */
+  @media screen and (min-width: 1400px) {
+    .recent-upload-card {
+      padding: 24px 20px;
+    }
+  
+    .recent-upload-card-thumb {
+      width: 80px;
+      height: auto;
+      margin-right: 20px;
+    }
+  
+    .ru-book-title {
+      font-size: 24px;
+    }
+    .tp-timeline p {
+        position: relative;
+        top: 0;
+        left: 35px;
+    }
+  }
