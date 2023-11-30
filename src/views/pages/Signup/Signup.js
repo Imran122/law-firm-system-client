@@ -42,6 +42,7 @@ const Signup = ({ props }) => {
             method: "POST",
             url: `${process.env.REACT_APP_API}/api/signup`,
             data: { firstname, lastname, email, address, password, phone: phonevalue},
+            
         })
             .then((response) => {
                 console.log("SIGNUP SUCCESS", response);
