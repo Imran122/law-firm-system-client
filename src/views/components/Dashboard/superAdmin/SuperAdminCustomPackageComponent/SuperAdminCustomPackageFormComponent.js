@@ -7,10 +7,15 @@ import Select from "react-select";
 import "./CustomPackages.css";
 import useAuth from "../../../../../hooks/useAuth";
 import { getCookie } from "../../../../../utilities/helper";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const SuperAdminCustomPackageFormComponent = () => {
   const [phonevalue, setPhonevalue] = useState();
-
+  const showToastMessage = () => {
+    toast.success("email send successfully!", {
+      position: toast.POSITION.TOP_RIGHT,
+    });
+};
   const allCountryName = [
     { value: "Algeria", label: "Algeria", name: "countryNameList" },
     { value: "Egypt", label: "Egypt", name: "countryNameList" },
@@ -212,16 +217,18 @@ const SuperAdminCustomPackageFormComponent = () => {
       .then((data) => {
         if (data) {
           //e.target.reset();
-
+         
           //setIsLoading(false);
           setPackageDataInfo("");
           navigate("/dashboard", { replace: true });
+          showToastMessage();
         }
       });
   };
 
   return (
     <>
+     <ToastContainer />
       <div className="payment-box p-4">
         <h2>Add a Institution</h2>
         <form onSubmit={submitCustomPackage}>
