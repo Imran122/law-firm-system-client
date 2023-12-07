@@ -47,11 +47,6 @@ const Login = ({ props }) => {
     axios({
       method: "POST",
       url: `${process.env.REACT_APP_API}/api/signin`,
-      withCredentials: true, // Send cookies/credentials with the request if needed
-      headers: {
-        'Content-Type': 'application/json',
-        // Add any other headers if required by your server
-      },
       data: { email, password },
     })
       .then((response) => {
