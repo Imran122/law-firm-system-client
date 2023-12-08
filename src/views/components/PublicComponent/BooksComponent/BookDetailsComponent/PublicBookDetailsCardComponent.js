@@ -25,7 +25,7 @@ import useContributeSingleDataDetails from "../../../../../hooks/useContributeSi
 import { useParams } from "react-router-dom";
 
 const PublicBookDetailsCardComponent = ({ bookItemContent }) => {
-  const shareUrl = "http://localhost:3000/books/details";
+  const shareUrl = "https://law-firm-client-render.onrender.com/books/details";
   const [contributeDetails, setContributeDetails] =
     useContributeSingleDataDetails();
 

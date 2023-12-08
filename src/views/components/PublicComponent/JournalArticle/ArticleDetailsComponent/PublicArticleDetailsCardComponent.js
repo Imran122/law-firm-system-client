@@ -24,7 +24,7 @@ import "./JournalArticleDetails.css";
 import useContributeSingleDataDetails from "../../../../../hooks/useContributeSingleDataDetails";
 
 const PublicArticleDetailsCardComponent = ({ articleItemContent }) => {
-  const shareUrl = "http://localhost:3000/journal-article/details";
+  const shareUrl = "https://law-firm-client-render.onrender.com/journal-article/details";
   const [contributeDetails, setContributeDetails] =
     useContributeSingleDataDetails();
 

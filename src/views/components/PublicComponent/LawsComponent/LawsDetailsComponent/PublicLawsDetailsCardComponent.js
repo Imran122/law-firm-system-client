@@ -23,7 +23,7 @@ import {
 import useContributeSingleDataDetails from "../../../../../hooks/useContributeSingleDataDetails";
 
 const PublicLawsDetailsCardComponent = ({ articleItemContent }) => {
-  const shareUrl = "http://localhost:3000/laws/details";
+  const shareUrl = "https://law-firm-client-render.onrender.com/laws/details";
 
   const [contributeDetails, setContributeDetails] =
     useContributeSingleDataDetails();

@@ -29,7 +29,7 @@ const HeaderComponent = ({ sidebarLinks, subtitle }) => {
     // setIsLoading(true);
     signout(() => {
       setUser("");
-      window.location.replace(logoutUrl);
+      window.location.replace("/login");
     });
   };
   return (

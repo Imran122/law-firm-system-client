@@ -29,7 +29,7 @@ import useContributeSingleDataDetails from "../../../../../hooks/useContributeSi
 
 const PublicCaseLawDetailsCardComponent = ({ caseItemContent }) => {
   const { caseDetailsData, setCaseDetailsData } = useAuth();
-  const shareUrl = "http://localhost:3000/case-law/details";
+  const shareUrl = "https://law-firm-client-render.onrender.com/case-law/details";
   const [contributeDetails, setContributeDetails] =
     useContributeSingleDataDetails();
 
