@@ -179,14 +179,14 @@ const Login = ({ props }) => {
                     </p>
                   </div>
                 </div>
-                <div className="button" onClick={Auth0Login}>
+               {/*  <div className="button" onClick={Auth0Login}>
                   <div className="d-flex justify-content-center align-items-center">
                     <SiAuth0 size={25} />
                     <p className="label login-google-text ms-2">
                       Sign in with Auth0
                     </p>
                   </div>
-                </div>
+                </div> */}
                 <p className="label no-account-text">
                   Don't have an account?
                   <Link to={"/signup"}>

@@ -26,7 +26,7 @@ const PublicHeaderComponent = () => {
     // setIsLoading(true);
     signout(() => {
       setUser("");
-      window.location.replace("/login");
+      navigate("/login", { replace: true });
     });
   };
   return (
