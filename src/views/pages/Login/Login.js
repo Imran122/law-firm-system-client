@@ -3,29 +3,61 @@ import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { HiOutlineMail } from "react-icons/hi";
 import { RiLockPasswordLine } from "react-icons/ri";
-import { SiFacebook, SiAuth0 } from "react-icons/si";
+import { SiFacebook } from "react-icons/si";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import { authenticate, isAuth } from "../../../utilities/helper";
 import "./Login.css";
 
 const Login = ({ props }) => {
-  const [loginData, setLoginData] = useState({});
+  /*  const [loginData, setLoginData] = useState({}); */
+  const [loginData, setLoginData] = useState({
+    email: "shadowvampire11@gmail.com",
+    password: "12345678",
+    role: "super-admin", // Default role
+  });
   const { user, setUser, isLoading, setIsLoading, setAuthError, authError } =
     useAuth();
+  const handleRoleChange = (e) => {
+    const role = e.target.value;
+    // Set default credentials based on the selected role
+    const defaultCredentials = {
+      "super-admin": {
+        email: "shadowvampire11@gmail.com",
+        password: "12345678",
+      },
+      admin: { email: "imranhossain122@gmail.com", password: "12345678" },
+      agency: { email: "mdimranhossain0066@gmail.com", password: "12345678" },
+      member: { email: "mdimranhossain0066@gmail.com", password: "12345678" },
+      editor: { email: "imrankhan6554@gmail.com", password: "12345678" },
+    };
+
+    setLoginData({
+      ...loginData,
+      role,
+      ...defaultCredentials[role],
+    });
+  };
+
   const location = useLocation();
-  console.log("lo", location);
+  console.log("lo", loginData);
   const navigate = useNavigate();
 
   //taking input
   const handelOnBlur = (e) => {
     const field = e.target.name;
     const value = e.target.value;
+    setLoginData({ ...loginData, [field]: value });
+  };
+
+  /*   const handelOnBlur = (e) => {
+    const field = e.target.name;
+    const value = e.target.value;
     const newLoginData = { ...loginData };
     newLoginData[field] = value;
 
     setLoginData(newLoginData);
-  };
+  }; */
 
   //login system by form submit
   const [errorMessage, setErrorMessage] = useState("");
@@ -74,12 +106,11 @@ const Login = ({ props }) => {
 
     axios({
       method: "GET",
-      url: `${process.env.REACT_APP_API}/api-auth0/signin`
+      url: `${process.env.REACT_APP_API}/api-auth0/signin`,
     })
       .then((response) => {
         console.log(response.data.url);
         window.location.replace(response.data.url);
-
       })
       .catch((error) => {
         setErrorMessage(error.response.data.error);
@@ -95,18 +126,32 @@ const Login = ({ props }) => {
           <div className="col col-12 col-lg-5 d-none d-lg-block login-box">
             <div className="login-txt">
               <h1>Helping people to learn the laws better</h1>
-              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
             </div>
           </div>
           <div className="col col-12 col-lg-6 offset-lg-1 auth-right">
             <div className="error-msg">
-
               {/* end  auth error message show */}
             </div>
-            <form
-              className="form-div"
-              onSubmit={handelLoginSubmit}
-            >
+            <div className="role-selection w-100">
+              <p className="label">Select Role For default Login:</p>
+              <select
+                className="role-selection w-100 p-2"
+                onChange={handleRoleChange}
+                value={loginData.role}
+              >
+                <option value="super-admin">Super Admin</option>
+                <option value="admin">Admin</option>
+
+                <option value="agency">Agency</option>
+                <option value="member">Member</option>
+                <option value="editor">Editor</option>
+              </select>
+            </div>
+            <form className="form-div" onSubmit={handelLoginSubmit}>
               <div className="login-title">
                 <h2>Welcome!</h2>
                 <p>Log in to continue</p>
@@ -118,6 +163,7 @@ const Login = ({ props }) => {
                     type="text"
                     className="text-input-field"
                     placeholder="Enter your email"
+                    value={loginData.email || ""}
                     name="email"
                     onBlur={handelOnBlur}
                   />
@@ -131,6 +177,7 @@ const Login = ({ props }) => {
                     className="text-input-field"
                     placeholder="Enter password"
                     name="password"
+                    value={loginData.password || ""}
                     onBlur={handelOnBlur}
                   />
                   <RiLockPasswordLine className="icon" size={20} />
@@ -143,15 +190,18 @@ const Login = ({ props }) => {
                         className="form-check-input"
                         type="checkbox"
                         value=""
-                        id="flexCheckDefault" />
-                      <label className="form-check-label" htmlFor="flexCheckDefault">
+                        id="flexCheckDefault"
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="flexCheckDefault"
+                      >
                         Remember me
                       </label>
                     </div>
                   </div>
 
-
-                  <Link to={'/forgot-password'} className="forgot">
+                  <Link to={"/forgot-password"} className="forgot">
                     <p className="label primary-color">Forget Passwords?</p>
                   </Link>
                 </div>
@@ -179,7 +229,7 @@ const Login = ({ props }) => {
                     </p>
                   </div>
                 </div>
-               {/*  <div className="button" onClick={Auth0Login}>
+                {/*  <div className="button" onClick={Auth0Login}>
                   <div className="d-flex justify-content-center align-items-center">
                     <SiAuth0 size={25} />
                     <p className="label login-google-text ms-2">
