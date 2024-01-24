@@ -40,7 +40,7 @@ const Login = ({ props }) => {
   };
 
   const location = useLocation();
-  console.log("lo", loginData);
+  console.log("loginData", loginData);
   const navigate = useNavigate();
 
   //taking input
@@ -163,9 +163,9 @@ const Login = ({ props }) => {
                     type="text"
                     className="text-input-field"
                     placeholder="Enter your email"
-                    value={loginData.email || ""}
+                    value={loginData.email}
                     name="email"
-                    onBlur={handelOnBlur}
+                    onChange={handelOnBlur}
                   />
                   <HiOutlineMail className="icon" size={20} />
                 </div>
@@ -177,8 +177,8 @@ const Login = ({ props }) => {
                     className="text-input-field"
                     placeholder="Enter password"
                     name="password"
-                    value={loginData.password || ""}
-                    onBlur={handelOnBlur}
+                    value={loginData.password}
+                    onChange={handelOnBlur}
                   />
                   <RiLockPasswordLine className="icon" size={20} />
                 </div>
